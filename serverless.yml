@@ -1,0 +1,20 @@
+service: reto-rimac
+
+frameworkVersion: '2'
+
+provider:
+  name: aws
+  runtime: nodejs12.x
+
+functions:
+  Planeta:
+    handler: src/functions/Planeta.Planeta
+    events:
+      - http:
+          path: emision/operacion/{operacion}
+          method: get
+          cors: true
+      - http:
+          path: emision/operacion/{operacion}
+          method: post
+          cors: true

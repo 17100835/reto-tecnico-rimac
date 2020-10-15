@@ -1,0 +1,19 @@
+{
+  "name": "reto-rimac",
+  "version": "1.0.0",
+  "description": "Reto vacante backend",
+  "main": "handler.js",
+  "scripts": {
+    "test": "mocha test/**/*.test.js",
+    "test_file": "mocha"
+  },
+  "author": "Gerardo Pacheco",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.20.0",
+    "mocha": "^5.2.0",
+    "moment": "^2.29.1",
+    "mysql": "^2.18.1",
+    "sails": "^0.12.14"
+  }
+}

@@ -1,0 +1,44 @@
+create database reto;
+
+use reto;
+
+create table planetas(
+id int not null primary key auto_increment,
+nombre varchar(50),
+periodo_rotacion int,
+periodo_orbita int,
+diametro int,
+clima varchar(50),
+gravedad varchar(50),
+terreno varchar(50),
+superficieAgua int,
+poblacion int,
+fecha_creacion varchar(35),
+fecha_edicion varchar(35),
+url text
+);
+
+INSERT INTO planetas(nombre,
+                     periodo_rotacion,
+                     periodo_orbita,
+                     diametro,
+                     clima,
+                     gravedad,
+                     terreno,
+                     superficieAgua,
+                     poblacion,
+                     fecha_creacion,
+                     fecha_edicion,
+                     url)
+                     values('Tatooine',
+                            23,
+                            304,
+                            10465,
+                            'arid',
+                            '1 standard',
+                            'desert',
+                            1,
+                            200000,
+                            '2014-12-09T13:50:49.641000Z',
+                            '2014-12-20T20:58:18.411000Z',
+                            'https://swapi.py4e.com/api/planets/1/');
